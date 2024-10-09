@@ -11,12 +11,10 @@ body {
     justify-content: center !important;
     align-items: center !important;
     height: 100vh !important;
+    margin: 0;
 }
 
-
-/* Contenedor de registro */
-
-.register-container {
+.login-container {
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
@@ -27,10 +25,7 @@ body {
     background-position: center !important;
 }
 
-
-/* Caja del formulario */
-
-.register-box {
+.login-box {
     background-color: white !important;
     display: flex !important;
     width: 100% !important;
@@ -40,8 +35,48 @@ body {
     overflow: hidden !important;
 }
 
+.image-container {
+    background-color: #f26486 !important;
+    width: 50% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    padding: 20px !important;
+    text-align: center !important;
+}
 
-/* Contenedor del formulario */
+.image-description {
+    color: white !important;
+    font-size: 18px !important;
+    line-height: 1.5 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.image-description .icon {
+    font-size: 48px !important;
+    margin-bottom: 10px !important;
+}
+
+.title-container {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+}
+
+.title-container .icon {
+    font-size: 48px !important;
+    margin-bottom: 10px !important;
+}
+
+h2 {
+    margin: 0 !important;
+    color: #d62b60 !important;
+    text-align: center !important;
+}
 
 .form-container {
     width: 50% !important;
@@ -51,25 +86,10 @@ body {
     justify-content: center !important;
 }
 
-
-/* Encabezado del formulario */
-
-h2 {
-    margin: 0 !important;
-    color: #d62b60 !important;
-    text-align: center !important;
-}
-
-
-/* Grupos de entrada de texto */
-
 .input-group {
     margin-bottom: 20px !important;
     text-align: left !important;
 }
-
-
-/* Etiquetas de texto */
 
 .input-group label {
     display: block !important;
@@ -77,9 +97,6 @@ h2 {
     color: #333 !important;
     margin-bottom: 5px !important;
 }
-
-
-/* Campos de entrada */
 
 .input-group input {
     width: 100% !important;
@@ -89,14 +106,10 @@ h2 {
     font-size: 16px !important;
 }
 
-
-/* Botón de envío */
-
 .btn {
     width: 100% !important;
     padding: 10px !important;
     background-color: #f26486 !important;
-    /* Color del botón */
     border: none !important;
     color: white !important;
     font-size: 16px !important;
@@ -107,14 +120,26 @@ h2 {
 
 .btn:hover {
     background-color: #d62b60 !important;
-    /* Color del botón al pasar el mouse */
 }
 
+.extra-links {
+    text-align: center !important;
+}
 
-/* Ajustes responsivos */
+.extra-links a {
+    display: block !important;
+    color: #f26486 !important;
+    text-decoration: none !important;
+    margin: 5px 0 !important;
+}
 
-@media (max-width: 768px) {
-    .register-box {
-        max-width: 400px !important;
-    }
+.extra-links a:hover {
+    text-decoration: underline !important;
+}
+
+.logo {
+    height: 130px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    /* Asegura que el logo no se desborde del contenedor */
 }
